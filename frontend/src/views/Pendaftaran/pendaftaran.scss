@@ -1,0 +1,298 @@
+@import '@/assets/scss/global-variable.scss';
+
+
+.section-pendaftaran-wrapper{
+    
+    padding-top:100px;
+    padding-bottom:134px;
+    display: flex;
+    justify-content: center;
+      
+    .right-wrapper{
+        
+
+        .right-content-wrapper{
+         padding-right: 70px;
+        }
+    }
+
+    p{
+        font-family: poppins,sans-serif;
+        font-weight: 500;
+    }
+
+    .form-wrapper{
+        margin-top:31px;
+        
+        box-sizing: border-box;
+        border-radius: 10px 10px 0px 0px;
+        -webkit-box-shadow: -2px 4px 38px -20px rgba(0,0,0,0.6);
+        -moz-box-shadow: -2px 4px 38px -20px rgba(0,0,0,0.6);
+        box-shadow: -2px 4px 38px -20px rgba(0,0,0,0.6);
+
+        form{
+            background-color: rgba(255,255,255,0.5);
+        }
+        .form-control{
+            border: 1px solid #D8D8D8;
+            border-top:none;
+         
+            border-left:none;
+            border-right: none;
+            padding:20px 25px 20px 25px;
+
+
+        }
+        .form-control::placeholder{
+            color:#B0B0B0;
+        }
+       
+      
+
+    }
+
+
+        .note-wrapper{
+            padding:17px 20px 22px 30px;
+            margin-top:31px;
+            display:flex;
+            align-items: center;
+            background: #FFFFFF;
+            border: 1px solid #ECECEC;
+            box-sizing: border-box;
+            box-shadow: 0px 13px 20px rgba(0, 0, 0, 0.04);
+            border-radius: 10px;
+            .text-wrapper{
+                margin-left:20px;
+            }
+            .img-cs{
+                width: 52px;
+                height: 56px;
+                
+            }
+            p{
+                padding-top:5px;
+                color:#5C5C5C;
+                font-size:15px;
+                line-height: 21px;
+            }
+            
+            ::v-deep .text-information > strong{
+                color:#C52D2E;
+                font-size:calc(12px + 0.3125vw);
+                &:nth-child(1){
+                    color:#5C5C5C;
+
+                }
+            }
+           
+
+
+        }
+
+ 
+}
+.btn-daftar{
+            background-color:#C52D2E ;
+            box-shadow: 0px 4px 10px rgba(203, 43, 43, 0.24);
+            width: 100%;
+            border:none;
+            &:focus{
+                   outline: 0;
+            box-shadow: none!important;
+            }
+        }
+
+
+.modal-content{
+    
+            p{
+              
+                font-weight:500;
+            }
+        }
+
+@include mobile{
+    .section-pendaftaran-wrapper{
+        .right-wrapper{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        .right-content-wrapper{
+         padding-right: 0px;
+        }
+    }
+    .note-wrapper{
+        flex-direction: column;
+        padding:10px 10px 10px 10px;
+  
+        p{
+            font-size:13px;
+        }
+        ::v-deep .text-information > strong{
+          
+            font-size:16px;
+    
+        }
+    
+    
+    }
+}
+
+
+    }
+
+@include tablet{
+    .section-pendaftaran-wrapper{
+        .right-wrapper{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        .right-content-wrapper{
+         padding-right: 0px;
+        }
+    }
+
+    .note-wrapper{
+       
+        p{
+            font-size:13px;
+        }
+        ::v-deep .text-information > strong{
+          
+            font-size:16px;
+    
+        }
+    }
+}
+        .btn-daftar{
+            padding:14px auto;
+            font-size:16px;
+            height:52px;
+            border-radius: 6px;
+        }
+    }
+    @include tablet-xl{
+    .section-pendaftaran-wrapper{
+             .form-wrapper{
+          }
+        form{
+            background-color: rgba(255,255,255,0.5);
+        }
+        .form-control{
+            height:60px;
+        }
+        .right-wrapper{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+
+        .right-content-wrapper{
+         padding-right: 0px;
+        }
+    }
+
+    .note-wrapper{
+       
+        p{
+            font-size:18px;
+        }
+        ::v-deep .text-information > strong{
+          
+            font-size:20px;
+    
+        }
+    }
+}
+    
+        .btn-daftar{
+            padding:14px auto;
+            font-size:16px;
+            height:52px;
+            border-radius: 6px;
+        }
+    }
+@include dekstop{
+    .section-pendaftaran-wrapper{
+          .form-wrapper{
+          }
+        form{
+            background-color: rgba(255,255,255,0.5);
+        }
+        .form-control{
+            height:50px;
+        }
+        .right-wrapper{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        
+        .right-content-wrapper{
+         padding-right: 0px;
+        }
+    }
+}
+    }
+@include extra{
+    .container{
+        max-width: 80%;
+    }
+    
+        .btn-daftar{
+            padding:14px auto;
+            font-size:16px;
+            height:52px;
+            border-radius: 6px;
+        }
+    .section-pendaftaran-wrapper{
+         .form-wrapper{
+ 
+
+        form{
+            background-color: rgba(255,255,255,0.5);
+        }
+        .form-control{
+            border: 1px solid #D8D8D8;
+            border-top:none;
+            height:62px;
+            border-left:none;
+            border-right: none;
+            padding:20px 25px 20px 25px;
+
+
+        }
+        .form-control::placeholder{
+            color:#B0B0B0;
+        }
+       
+      
+
+    }
+        .note-wrapper{
+            .img-cs{
+                width: 52px;
+                height:56px;
+            }
+            p{
+                padding-top:5px;
+                font-size:16px;
+            }
+            ::v-deep .text-information > strong{
+              
+                font-size:20px;
+        
+            }
+        }
+    .right-wrapper{
+        
+
+        .right-content-wrapper{
+         padding-right: 152px;
+        }
+    }
+    }
+
+}

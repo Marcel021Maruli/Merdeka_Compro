@@ -1,50 +1,19 @@
-$bp-sm:600px;
-$bp-md:768px;
-$bp-L:992px;
-$bp-XL:1200px;
+@import '@/assets/scss/global-variable.scss';
 
-
-@mixin mobile{
-    @media (min-width:0) and (max-width:#{$bp-sm})
-    {
-        @content;
-    }
-}
-@mixin tablet {
-    @media (min-width:$bp-sm+1px) and (max-width:#{$bp-md})
-    {
-        @content;
-    }
-}
-@mixin dekstop {
-    @media (min-width:$bp-md+1px) and(max-width:#{$bp-L}){
-        @content;
-    }
-        
-}
-@mixin superdesktop {
-    @media(min-width:$bp-L+1px) and(max-width:#{$bp-XL}){
-        @content;
-    }
-}
-@mixin extra{
-    @media(min-width:$bp-XL+245){
-        @content;
-    }
-}
 
 .section-merdeka{
+    
     margin-top:-200px;
     padding-top:250px;
     padding-bottom:115px;
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: #FAFAFA;
     .logo-about{
-        width:300px;
-        height:300px;
+        width:330px;
+        height:230px;
     }
     p{
         font-family: poppins,sans-serif;
-        font-size:18px;
+        font-size:15px;
     }
 
 }
@@ -53,12 +22,26 @@ $bp-XL:1200px;
 .about-kenapa-section{
     
     position:relative;
-    .stgh-lingkaran{
-        width:310px;
-        position:absolute;
-        top:-100px;
-        left:-150px;
+    padding-bottom:270px;
+    display: flex;
+        justify-content: center;
+    
+        .wrapper{
+            width: 90% !important;
+        }
+    .kenapa-wrapper{
+        display:flex;
+        align-items: center;
+        justify-content: start;
     }
+    .stgh-lingkaran{
+        width:290px;
+        position:absolute;
+        top:-50px;
+        z-index:-5;
+        left:0px;
+    }
+
 
 
 }
@@ -79,13 +62,117 @@ $bp-XL:1200px;
 
 }
 
-
-@include extra{
+.underline{
+    border-bottom:1px solid  #CB2B2B;
+}
+@include mobile(){
     .about-kenapa-section{
+        text-align: left;
         .stgh-lingkaran{
-            width: 500px;
+            width:210px;
             top:-200px;
-            left:-400px;
+            left:0px;
+        }
+        .kenapa-wrapper{
+            p{
+                font-size: 25px;
+            }
+            br{
+                display: none;
+            }
+        }
+    }
+}
+@include tablet{
+    .about-kenapa-section{
+        text-align: left;
+      
+        .stgh-lingkaran{
+            width:210px;
+            top:-100px;
+            left:0px;
+        }
+        .kenapa-wrapper{
+            br{
+                display: none;
+            }
+        }
+    }
+}
+@include tablet-xl{
+    .about-kenapa-section{
+   
+        text-align: left;
+ 
+        .stgh-lingkaran{
+            width:210px;
+            top:-100px;
+            left:0px;
+        }
+        .kenapa-wrapper{
+            br{
+                display: none;
+            }
+        }
+    }
+}
+@include dekstop{
+    .about-kenapa-section{
+   
+        .stgh-lingkaran{
+            width: 300px;
+            top:-100px;
+            left:-40px;
+        }
+    }
+}
+@include superdesktop{
+    .about-kenapa-section{
+   
+        .stgh-lingkaran{
+            width: 250px;
+            top:0px;
+            left:0;
+        }
+    }
+}
+@include extra{
+
+    .section-merdeka{
+        margin-top:0;
+        padding-top:80px;
+        padding-left:100px ;
+        padding-right: 100px;
+        padding-bottom:129px;
+   
+    
+        .logo-about{
+            width:449px;
+            height:318px;
+        }
+        .text-content{
+            padding-left:50px;
+            p{
+                font-family: poppins,sans-serif;
+                font-size:22px;
+                text-align:justify;
+            }
+        }
+   
+    
+    }
+    .about-kenapa-section{
+        display: flex;
+        justify-content: center;
+        padding-top:0px;
+        .wrapper{
+            width: 80% !important;
+        }
+     
+        .stgh-lingkaran{
+            width:420px;
+            top:-200px;
+            left:0px;
         }
     }
 }

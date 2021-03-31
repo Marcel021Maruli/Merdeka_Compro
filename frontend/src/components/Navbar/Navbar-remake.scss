@@ -1,0 +1,337 @@
+@import '@/assets/scss/global-variable.scss';
+
+.router-link-active{
+    padding:10px 17px;
+    // background:white;
+    background:linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
+    border-radius:15.5px;
+    // color: #C52D2E!important;
+    color:white !important;
+    text-decoration: none;
+    transition: ease-in-out 0.5;
+  
+  }
+  .navbar-toggler{
+    border-color:rgb(197, 197, 197);;
+}
+
+
+
+.navbar{
+    z-index:6;
+    padding-top: 0;
+    .navbar-brand{
+        
+        img{
+
+            width: calc((52px + 5.0520833vw)*2);
+            height:  calc((50px + 5.763073639274279vh)*2);
+            margin-left:calc(3rem + 4.0875vw);
+        }
+    
+      
+    }
+
+ 
+
+
+    .navbar-nav{
+      
+        width: 55.83vw ;
+        margin-right: 2.3vw;
+        display:flex;
+        justify-content: space-between;
+
+        .nav-item{
+            .nav-link{
+                a{
+                    font-family: poppins;
+                    font-size:calc(12px + 0.155vw);
+                    color:#636363;
+
+                    &:hover{
+                        text-decoration: none;
+                        opacity: 0.7;
+
+                    }
+                    
+                }
+
+            }
+        }
+
+        .divider{
+            color:#636363;
+            margin-top: 9px;
+        }
+    }
+}
+
+
+.navbar-home{
+.router-link-active{
+            background:white;
+            color: #C52D2E!important;
+        
+        }
+.navbar{
+    padding-top: 0.0225vw;
+    .navbar-nav{
+
+
+        .nav-item{
+            .nav-link{
+                a{
+                    color:white;
+                }
+            }
+            }
+                    .divider{
+                    color:white;
+                    
+                }
+        }
+        }
+}
+
+
+@include mobile{
+    .navbar-home{
+        .navbar{
+            padding-top: 10px;
+        }
+       
+    }
+    .router-link-active{
+        background:white;
+        color: #C52D2E!important;
+    
+    }
+    .navbar{
+        background: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
+        .navbar-nav{
+            margin: 20px;
+            border:none !important;
+            width: 100% ;
+            margin-right:0;
+            margin-left:0!important;
+            display:block;
+            
+            .nav-item{
+                .nav-link{
+                    a{
+                        font-family: poppins;
+                        color:white;
+                        
+                    }
+    
+                }
+            }
+          
+    
+            .divider{
+                margin-left:5px;
+                margin-right: 5px;
+                color:white;
+            }
+           
+        }
+      }
+      .navbar-brand{
+        display:none;
+      }
+
+
+ 
+}
+
+@include tablet{
+    .router-link-active{
+        background:white;
+        color: #C52D2E!important;
+    
+    }
+    .navbar{
+        
+
+        background: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
+
+        .navbar-nav{
+            margin: 20px;
+            border:none !important;
+            width: 100% ;
+            margin-right:0;
+            margin-left:0!important;
+            display:block;
+            .nav-item{
+                .nav-link{
+                    a{
+                        font-family: poppins;
+                        color:white;
+                        
+                    }
+    
+                }
+            }
+          
+            .divider{
+                margin-left:5px;
+                margin-right: 5px;
+                color:white;
+            }
+           
+        }
+      }
+      .navbar-brand{
+        display:none;
+      }
+
+
+}
+
+@include tablet-xl{
+    .router-link-active{
+        background:white;
+        color: #C52D2E!important;
+    
+    }
+    .navbar{
+        background: linear-gradient(210.71deg, #C52D2E 15.71%, #AD262F 90.35%);
+        .navbar-nav{
+        
+            border:none !important;
+            width: 100% ;
+            margin-right:0;
+            margin-left:0!important;
+            display:block;
+          
+            .nav-item{
+                .nav-link{
+                    a{
+                        font-family: poppins;
+                        color:white;
+                        
+                    }
+    
+                }
+            }
+            .divider{
+                margin-left:5px;
+                margin-right: 5px;
+                color:white;
+            }
+           
+        }
+
+        .navbar-brand{
+            display: none;
+      }
+
+      }
+
+
+}
+
+@include dekstop{
+    
+    .router-link-active{
+        padding:5px 12px;
+      
+      
+      }
+    .navbar{
+       z-index:6;
+        padding-top: 1.5625vw;
+        .navbar-brand{
+            img{
+    
+                width: calc((40px + 5.0520833vw)*2);
+                height: calc((30px + 5.76307363929vh)*2);
+                margin-left:calc(1rem + 3.3875vw);
+            }
+        }
+    
+    
+        .navbar-nav{
+            
+            width: calc(60.83vw + 1rem) ;
+            margin-right: 0.5vw;
+            display:flex;
+            justify-content: space-between;
+    
+            .nav-item{
+                .nav-link{
+                    a{
+                        font-size:calc(8.5px + 0.155vw);  
+                    }
+    
+                }
+            }
+    
+            .divider{
+                color:white;
+                margin-top: 9px;
+            }
+        }
+    }
+  
+}
+@include superdesktop{
+    .router-link-active{
+        padding:7px 14px;
+      
+      
+      }
+    .navbar{
+     z-index:6;
+          padding-top: calc(1.3625vw + 5px);
+        .navbar-nav{
+            width: calc(57.83vw + 14px) ;
+            margin-right: 2vw;
+            .nav-item{
+                .nav-link{
+                    a 
+                    {
+                        font-size:calc(10px + 0.155vw);
+                       
+               
+                        
+                    }
+    
+                }
+            }
+    
+         
+        }
+    }
+  
+}
+
+@include ultradesktop{
+    .router-link-active{
+        padding:7px 14px;
+      
+      
+      }
+    .navbar{
+     z-index:6;
+          padding-top: calc(1.3625vw + 5px);
+        .navbar-nav{
+            width: calc(60.83vw + 14px) ;
+            margin-right: 2.5vw;
+            .nav-item{
+                .nav-link{
+                    a 
+                    {
+                        font-size:calc(12px + 0.155vw);
+                       
+                    }
+    
+                }
+            }
+    
+         
+        }
+    }
+  
+}
